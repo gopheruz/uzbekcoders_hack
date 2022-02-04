@@ -1,0 +1,240 @@
+ful stak codi
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Building the Prototype</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="container">
+    <h1>Dog</h1>
+    <!-- photo credit: wikipedia.org, image taken by Ritik -->
+    <img src="https://www.galwaydaily.com/wp-content/uploads/2020/07/short-coated-tan-dog-1189673-scaled.jpg" alt="Dog">
+    <div id="card" class="animal-info">
+      <p id="interesting-fact">Practive Udacity</p>
+      <ul id="facts">
+        <li>
+          <span>CSS</span>: Amphiprioninae
+        </li>
+        <li>
+          <span>HTML</span>: 11 centimeters
+        </li>
+        <li>
+          <span>Javascript</span>: 7 years
+        </li>
+        <li>
+          <span>Jquery</span>: Tropical coral reefs
+        </li>
+      </ul>
+      <p id="summary">lorem is
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+
+/* add your CSS here */
+img {
+  width: 300px;
+}
+#interesting-fact {
+  font-style: italic;
+}
+#facts li {
+	list-style: none
+}
+#facts li span {
+  font-weight: bold;
+}
+#container, img, .animal-info {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
+
+
+
+
+
+text = "again"
+
+def reverse(x):
+    #complete this function so that it takes string x as an input 
+    #and returns its reverse
+    text = str(x)
+    return text[::-1]
+
+
+print("the reversed text is: "+reverse(text))
+
+
+no_list = [22,68,90,78,90,88]
+
+def average(x):
+    #complete the function's body to return the average
+    sum = 0
+    for n in x:
+        sum+=n
+    return sum/len(x)
+    
+print(average(no_list))
+
+
+no_list = [1,2,3,4]
+
+def maximum(no_list):
+    #complete the function to return the highest number in the list
+    max = -1
+    for x in no_list:
+        if max < x:
+            max = x
+    return max
+
+print(maximum(no_list))
+
+
+no_list = [22,22,2,1,11,11,2,2,3,3,3,4,5,5,5,55,55,66]
+
+def unique_list(l):
+  #complete the function's body to return the unique list of numbers
+    final_list = []
+    for num in l:
+        if num not in final_list:
+            final_list.append(num)
+    return final_list
+
+print(unique_list(no_list))
+
+
+android codi
+
+
+
+public class MyCalculator {
+
+    int input1 = 10;
+    int input2 = 20;
+    int input3 = 30;
+    int input4 = 40;
+    int input5 = 50;
+
+    public float average() {
+        // TODO: write java code to calculate the average for all input variables
+        float sum = (float)(input1 + input2 + input3 + input4 + input5)/(float)(5);
+         return sum;
+    }
+}
+
+
+
+
+
+// TODO create class MyCalculator with sum, divid, subtract, multiply
+class MyCalculator {
+    public int sum(int a, int b){
+        return a+b;
+    }
+    public int subtract(int a, int b){
+        return a-b;
+    }
+    public int multiply(int a, int b){
+        return a*b;
+    }
+    public double divid(int a, int b){
+        double res = a/b;
+        return res;
+    }
+}
+
+
+malumotlar tahlilchisi codi
+
+SELECT * FROM Invoice WHERE InvoiceDate>='2013-01-01';
+
+SELECT FirstName,LastName,Country
+FROM Customer
+WHERE Country=='Brazil' OR Country=='Canada' OR Country=='India' OR 
+Country=='Sweden';
+
+
+SELECT Track.Name,Track.Composer,Album.Title
+FROM Track
+JOIN Album ON Track.AlbumId = Album.AlbumId
+WHERE Track.Name LIKE 'A%'AND Track.Composer NOT NULL ;
+
+SELECT Customer.FirstName,Customer.LastName,Invoice.Total
+FROM Invoice
+JOIN Customer ON Customer.CustomerId=Invoice.CustomerId
+ORDER BY Invoice.Total DESC LIMIT 10;
+
+
+frond end dasturi codi
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Building the Prototype</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="container">
+    <h1>Dog</h1>
+    <!-- photo credit: wikipedia.org, image taken by Ritik -->
+    <img src="https://www.galwaydaily.com/wp-content/uploads/2020/07/short-coated-tan-dog-1189673-scaled.jpg" alt="Dog">
+    <div id="card" class="animal-info">
+      <p id="interesting-fact">Practive Udacity</p>
+      <ul id="facts">
+        <li>
+          <span>CSS</span>: Amphiprioninae
+        </li>
+        <li>
+          <span>HTML</span>: 11 centimeters
+        </li>
+        <li>
+          <span>Javascript</span>: 7 years
+        </li>
+        <li>
+          <span>Jquery</span>: Tropical coral reefs
+        </li>
+      </ul>
+      <p id="summary">lorem is
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+/* add your CSS here */
+img {
+  width: 300px;
+}
+#interesting-fact {
+  font-style: italic;
+}
+#facts li {
+	list-style: none
+}
+#facts li span {
+  font-weight: bold;
+}
+#container, img, .animal-info {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
